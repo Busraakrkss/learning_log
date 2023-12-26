@@ -1,0 +1,14 @@
+{% extends 'learning_logs/base.html' %}
+{% block content %}
+
+<h1>Topiks: </h1>
+<ul>
+  {% for topik in topiks %}
+      <li>{{ topik }}</li>
+  {% empty %}
+     <li>No topiks have been added yet. </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock content %}
